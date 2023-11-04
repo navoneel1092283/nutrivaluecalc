@@ -6,10 +6,6 @@ from plotly.subplots import make_subplots
 import dash_bootstrap_components as dbc
 from dash import Dash, dcc, html, Input, Output  # pip install dash (version 2.0.0 or higher)
 
-df = pd.read_csv('data_df.csv')
-years = df['Year'].unique()
-sectors = list(df.columns)[1:]
-
 
 
 stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
