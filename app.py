@@ -11,6 +11,7 @@ from dash import Dash, dcc, html, Input, Output  # pip install dash (version 2.0
 stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = Dash(__name__, external_stylesheets = stylesheets)
+server = app.server
 
 app.layout = html.Div(children = [html.Div(className='row', children=[
                                       html.Div([
