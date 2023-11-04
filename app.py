@@ -127,11 +127,16 @@ def update_graph1(s_b, energy, fat, sugar, salty, fruit, fiber, protein):
 
   #df.to_excel('Dataset.xlsx', index = False)
 
+  nutri_value = df['Score'].sum()
+
+  sum_negative_points = Energy_score + Saturated_Fats_score + Total_sugar_score + Sodium_score
+  if sum_negative_points <= -11 and Veggies_score < 5:
+    nutri_value -= Protien_score
+
+
 
 
   #df.to_excel('Dataset.xlsx', index = False)
-  nutri_value = df['Score'].sum()
-
 
   if s_b == 'solid':
     fig = go.Figure(go.Indicator(
