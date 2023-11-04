@@ -125,7 +125,7 @@ def update_graph1(s_b, energy, fat, sugar, salty, fruit, fiber, protein):
   df = df.append({'Points' : 'Protien (g)', 'Composition' : protein, 'Score' : Protien_score},
           ignore_index = True)
 
-  df.to_excel('Dataset.xlsx', index = False)
+  #df.to_excel('Dataset.xlsx', index = False)
 
 
 
